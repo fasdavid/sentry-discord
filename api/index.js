@@ -14,7 +14,7 @@ module.exports = async (request, response) => {
 
     const payload = {
       username: 'Error reporting',
-      avatar_url: `https://dsjcamp.org/images/page/logo-s.png`,
+      avatar_url: `https://cdn.discordapp.com/icons/803256473160646726/41e71e33f476ac7f9931f3ebb6badc48.png?size=128`,
       embeds: [
         {
           title: body.project_name,
