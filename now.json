@@ -1,6 +1,6 @@
 {
   "name": "sentry-discord",
   "env": {
-    "WEBHOOK": "https://discord.com/api/webhooks/813048433886887966/W7bYpkiLqjgfO13BH_94LAZexaBSGRvix-RNZL2UR9C5DZNIbuFpNRY5CBsxa_j2qL6R"
+    "WEBHOOK": "https://discord.com/api/webhooks/813069355746590740/w7ZHY4ou4MTBXpJi2__C1XSgbOCbg1EpaqFsfqFrU6MRvJbO3Ujq8BTnlQCM-HbnHT70"
   }
 }
