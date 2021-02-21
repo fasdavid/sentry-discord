@@ -24,8 +24,8 @@ module.exports = async (request, response) => {
           timestamp: new Date(body.event.received * 1000).toISOString(),
           color: COLORS[body.level] || COLORS.error,
           footer: {
-            icon_url: 'https://github.com/fluidicon.png',
-            text: 'ianmitchell/sentry-discord',
+            icon_url: 'https://cdn.discordapp.com/avatars/813048433886887966/77270f95cf2d8d600cca56cda880a024.webp?size=128',
+            text: 'via Sentry.io',
           },
           fields: [],
         },
