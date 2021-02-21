@@ -13,8 +13,8 @@ module.exports = async (request, response) => {
     const { body } = request;
 
     const payload = {
-      username: 'Sentry',
-      avatar_url: `https://raw.githubusercontent.com/IanMitchell/sentry-discord/master/sentry-icon.png`,
+      username: 'Error reporting',
+      avatar_url: `https://dsjcamp.org/images/page/logo-s.png`,
       embeds: [
         {
           title: body.project_name,
