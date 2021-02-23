@@ -57,7 +57,7 @@ module.exports = async (request, response) => {
         });
       });
     }
-
+console.log(payload);
     fetch(process.env.WEBHOOK, {
       method: 'POST',
       body: JSON.stringify(payload),
