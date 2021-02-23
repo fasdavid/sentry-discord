@@ -12,6 +12,15 @@ module.exports = async (request, response) => {
   try {
     const { body } = request;
 
+   var recived=Date.now();
+    
+    try{
+      recived=new Date(body.event.received * 1000).toISOString();
+    }
+    catch(error){
+          console.error(err);
+    }
+    
     const payload = {
       username: 'Error reporting',
       avatar_url: `https://cdn.discordapp.com/icons/803256473160646726/41e71e33f476ac7f9931f3ebb6badc48.png?size=128`,
@@ -21,7 +30,7 @@ module.exports = async (request, response) => {
           type: 'rich',
           description: body.message,
           url: body.url,
-          timestamp: new Date(body.event.received * 1000).toISOString(),
+          timestamp: recived,
           color: COLORS[body.level] || COLORS.error,
           footer: {
             icon_url: 'https://cdn.discordapp.com/avatars/813048433886887966/77270f95cf2d8d600cca56cda880a024.webp?size=128',
