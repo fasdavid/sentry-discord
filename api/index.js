@@ -52,7 +52,7 @@ module.exports = async (request, response) => {
       body.event.tags.forEach(([key, value]) => {
         payload.embeds[0].fields.push({
           name: key,
-          value,
+          value: value,
           inline: true,
         });
       });
